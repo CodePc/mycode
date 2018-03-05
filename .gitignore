@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.idea/compiler.xml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
+myJava.iml
+pom.xml
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/com/.DS_Store
+src/main/java/com/Code/
+src/main/java/com/JDBCConnectionClass.java
+src/main/java/com/algo/PatternMatching.java
+src/main/java/com/learnI/
+src/main/java/com/learnII/
+src/main/resources/
+src/test/
+target/
