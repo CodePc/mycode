@@ -1,0 +1,14 @@
+We use interface to make application loosely coupled.
+>> binary search has dependency on sort algo and sort can be done in various way (bubble or quick e.t.c).
+>> so we take sort algo out of binarySearch class and make it as a interface with sort method.
+>> Above interface will be implemented by all the sorting also now (with it's on implementation).
+>> In binary search we call Interface of sort instead of any particular sort algorithm because calling
+ particular algo makes Binary search tightly coupled with that particular sort algo.
+>> We create a constructor of Binary serach with instance of sort interface algo.
+>> Now we have provision to call binary search with any type of sort also which has implemented sort interface.
+
+Problem:
+
+>> But still we have to create a instance of BinarySearchImpl in BinarySearch class.
+>> Spring provide a way to avoid creation of instance of dependency with Autowired (which always call singleton instance of it)
+

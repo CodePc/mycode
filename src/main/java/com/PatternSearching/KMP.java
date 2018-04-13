@@ -1,4 +1,4 @@
-package com.algo;
+package com.PatternSearching;
 
 /**
  * @author prem chand shah on 06-03-2018
