@@ -33,8 +33,14 @@ public class HashMapExe {
             System.out.println("carRegNo: " + c.getKey().getRegNo() + ", " + "carOwnerName: " + c.getValue().getOwnerName());
         }
 
+        Map<String, CarDetails> map = new HashMap<>();
+        map.put("k1", new CarDetails("1"));
+        map.put("k1", new CarDetails("2"));
+        map.put("k1", new CarDetails("3"));
+        System.out.println(map.get("k1"));
+
         Set<Map.Entry<CarDetails, CarOwner>> c = carDetails.entrySet();
-        Iterator<Map.Entry<CarDetails,CarOwner>> d = c.iterator();
+        Iterator<Map.Entry<CarDetails, CarOwner>> d = c.iterator();
 
         Iterator<Map.Entry<CarDetails, CarOwner>> i = c.iterator();
 

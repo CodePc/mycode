@@ -19,5 +19,24 @@ public class InnerClasses {
     // - normal inner class
     // - method local inner class
     // - Anonymous innerclass
-    
+
+    String base;
+
+    private class innerClassLOne {
+        String one;
+
+        public class innerClassLTwo {
+            String two;
+
+            public class innerClassLThree {
+                String three;
+
+                public void three(String three) {
+                    this.three = three;
+                }
+
+            }
+        }
+    }
+
 }

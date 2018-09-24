@@ -1,11 +1,15 @@
 package com.code.javaCollection.SortingAndCompareInCollection;
 
+import java.util.HashMap;
+
 /**
  * Created by prem on 5/1/2017.
  */
 public class CompareCar implements Comparable<CompareCar> {
     private int price;
     private String regNo;
+
+    HashMap<String,String > hashMap = new HashMap<>();
 
     CompareCar(int price, String regNo) {
         this.price = price;
@@ -39,6 +43,7 @@ public class CompareCar implements Comparable<CompareCar> {
         }
         return 0;
     }
+
 
 //    @Override // custom compare
 //    public int compareTo(CompareCar o1, CompareCar o2) {

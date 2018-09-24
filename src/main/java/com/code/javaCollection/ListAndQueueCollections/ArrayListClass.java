@@ -7,6 +7,8 @@ import java.util.Iterator;
  * Created by prem on 4/30/2017.
  */
 public class ArrayListClass {
+
+
     public static void main(String[] args) {
         ArrayList<CarClass> carClasses = new ArrayList<>();
         CarClass BMW = new CarClass("123");
@@ -18,6 +20,9 @@ public class ArrayListClass {
         carClasses.add(AUDI);
         carClasses.add(MARUTI);
         carClasses.add(new CarClass("121"));
+        Object ob = new Object();
+        ob.getClass();
+
         // add at index
         carClasses.add(4, new CarClass("4343"));
         boolean b = carClasses.add(new CarClass("acb"));
@@ -38,6 +43,11 @@ public class ArrayListClass {
 //        }
 
         Iterator<CarClass> carClassIterator = carClasses.iterator();
+        Iterator<CarClass> cc = carClasses.iterator();
+
+        while (cc.hasNext()){
+
+        }
 
         while (carClassIterator.hasNext()) {
             System.out.println(carClassIterator.next().getRegNo());

@@ -55,8 +55,7 @@ public class FirstNonRepeated {
 
 
     public static Character firstNonRepeatedCharacter(String str) {
-        HashMap<Character, Integer> characterhashtable =
-                new HashMap<Character, Integer>();
+        HashMap<Character, Integer> characterhashtable = new HashMap<Character, Integer>();
         int i, length;
         Character c;
         length = str.length();  // Scan string and build hash table

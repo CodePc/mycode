@@ -16,6 +16,8 @@ public class LinkedHashMapExe {
         for (int i = 0; i < 6; i++) {
             linkedMap.put(new CarDetails("P" + i), new CarOwner());
         }
+
+
         System.out.println("ORDER FOR LinkedHashMap");
         LinkedHashMapExe.mapIterator(linkedMap);
         Map<CarDetails, CarOwner> map = new HashMap<>();
@@ -42,6 +44,7 @@ public class LinkedHashMapExe {
 
     public static void mapIterator(Map<CarDetails, CarOwner> map) {
         Iterator<Map.Entry<CarDetails, CarOwner>> iterator = map.entrySet().iterator();
+        Iterator<Map.Entry<String,String>> it = new HashMap<String,String>().entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<CarDetails, CarOwner> c = iterator.next();
             System.out.println("Car regNo. : " + c.getKey().getRegNo() + ", " + "Owner Name :" + c.getValue().getOwnerName());

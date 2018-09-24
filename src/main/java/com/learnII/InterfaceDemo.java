@@ -24,9 +24,13 @@ C:\MyStuff\javaCourse\Interface.png
 public interface InterfaceDemo {
     int age = 50;
 
+    String in=null;
+
     public abstract void methodI();
 
     public void methodII();
+
+    void methodIII();
 }
 
 class InfClass extends EyeTreatment implements InterfaceDemo {
@@ -36,6 +40,11 @@ class InfClass extends EyeTreatment implements InterfaceDemo {
 
     @Override
     public void methodII() {
+
+    }
+
+    @Override
+    public void methodIII() {
 
     }
 }

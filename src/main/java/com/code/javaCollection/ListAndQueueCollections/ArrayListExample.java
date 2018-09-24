@@ -13,6 +13,7 @@ public class ArrayListExample {
         usedCars.add(c);
         System.out.println(usedCars.size());
 
+
         for (int i = 0; i < 6; i++) {
             usedCars.add(new UsedCar("HA" + i));
         }

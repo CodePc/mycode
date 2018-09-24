@@ -18,7 +18,8 @@ class BlankFinal {
     }
 
     public void num(int j) {
-        //  i = j; Invalid cannot initialize  in member class, it can only be initialized into constructor method
+//          i = j;
+        // Invalid cannot initialize  in  method, it can only be initialized into constructor method
     }
 
 

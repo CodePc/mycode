@@ -22,6 +22,7 @@ public class Racer implements Runnable {
             if (isRaceWon)
                 break;
         }
+
     }
 
     private static boolean isRaceWon(int totalDistance) {

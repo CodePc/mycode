@@ -11,7 +11,11 @@ public class PassengerThread extends Thread {
         this.seatsNeeded = seats;
     }
 
+
     public int getSeatsNeeded() {
         return seatsNeeded;
     }
+
+
+
 }

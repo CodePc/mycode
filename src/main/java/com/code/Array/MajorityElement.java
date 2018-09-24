@@ -49,8 +49,8 @@ public class MajorityElement {
 //        int[] array = {2, 1, 2, 4, 7}; // this case will fail because it gives 7 as majority candidate
         int[] array = {2, 1, 2, 2, 2, 2, 4, 7};
         int majElm = majorityElem(array, array.length);
-        System.out.println(majElm);
-        System.out.println(isMajority(array, majElm, array.length));
-        System.out.println(majorityIfOccNbyThree(array));
+        System.out.println(" maoj elm " + majElm);
+//        System.out.println(isMajority(array, majElm, array.length));
+//        System.out.println(majorityIfOccNbyThree(array));
     }
 }

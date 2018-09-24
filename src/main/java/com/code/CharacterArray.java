@@ -5,11 +5,20 @@ package com.code;
  */
 public class CharacterArray {
     int MAX_SIZE = 256;
+
+    private void t() {
+        String p = "prem";
+        char pp[] = p.toCharArray();
+
+    }
+
     public static void main(String[] args) {
-        int c=0;
-        String s= "Kishan prem chand shah";
-        for(Character ss : s.toCharArray()){
-//            int [] count[c++] = ss;
+        int c = 0;
+
+        String s = "Kishan prem chand shah";
+        s.toCharArray();
+        for (char ss : s.toCharArray()) {
+
         }
     }
 }

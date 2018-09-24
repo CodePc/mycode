@@ -29,6 +29,24 @@ public final class ImmutableClass {
 
 }
 
+final class imm {
+    final String ss;
+    final int in;
+
+    public imm(String ss, int in) {
+        this.ss = ss;
+        this.in = in;
+    }
+
+    public String getSs() {
+        return this.ss;
+    }
+
+    public int getIn() {
+        return this.in;
+    }
+}
+
 // Driver class
 class Test {
     public static void main(String args[]) {

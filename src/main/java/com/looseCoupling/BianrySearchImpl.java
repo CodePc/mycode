@@ -15,5 +15,13 @@ public class BianrySearchImpl {
 
     public void binarySort() {
         sortingAlgo.sort(); // we can call all the method of interface here
+        BubbleSort bubbleSort = new BubbleSort();
+
+        // sortingAlgo will have a implementation of object which is passed
+        SortingAlgo sortingAlgo = new BubbleSort();
+        sortingAlgo.sort();
+
     }
+
+
 }

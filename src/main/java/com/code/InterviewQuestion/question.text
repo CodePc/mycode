@@ -1,0 +1,10 @@
+Write a program to find the second largest number in an array?
+
+In a given integer array, move all the non zero numbers to top of the array.
+Write a function named moveNonZeros(arr[]) that returns the converted array as output.
+Use only the input array. Don’t create another array
+This should be solved with a single loop
+
+Sample Input       : [6, -1, 5, 0, 4, 0, -9, 0]
+
+Output        : [6, -1, 5, 4, -9, 0, 0, 0, 0]

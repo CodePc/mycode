@@ -5,5 +5,5 @@ package com.Generics;
  * @project myJava
  */
 public class Glass<T> {
-    public Juice liquide;
+    public T liquide;
 }

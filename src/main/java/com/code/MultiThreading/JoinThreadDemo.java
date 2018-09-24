@@ -4,6 +4,8 @@ package com.code.MultiThreading;
  * Created by prem on 5/13/2017.
  */
 public class JoinThreadDemo implements Runnable {
+
+
     @Override
     public void run() {
         if (Thread.currentThread().getName().equals("First thread")) {

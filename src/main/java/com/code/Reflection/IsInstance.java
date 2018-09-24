@@ -1,30 +1,34 @@
 package com.code.Reflection;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by prem on 4/27/2017.
- *
- * instanceof operator vs isInstance() method in Java
- instanceof operator and isInstance() method both are used for checking the class of the object.
- But main difference comes when we want to check the class of object dynamically. In this case isInstance() method
-
- will work. There is no way we can do this by instanceof operator.
-
- instanceof operator and isInstance() method both return a boolean value. Consider an example:
+ * <p>
+ * Instanceof operator vs isInstance() method in Java
+ * instanceof operator and isInstance() method both are used for checking the class of the object.
+ * But main difference comes when we want to check the class of object dynamically. In this case isInstance() method
+ * <p>
+ * will work. There is no way we can do this by instanceof operator.
+ * <p>
+ * instanceof operator and isInstance() method both return a boolean value. Consider an example:
  */
 public class IsInstance {
     // This method tells us whether the object is an
     // instance of class whose name is passed as a
     // string 'c'.
-    public static boolean fun(Object obj, String c)
-            throws ClassNotFoundException
-    {
+
+
+    public static boolean fun(Object obj, String c) throws ClassNotFoundException {
+        List<String> list = new ArrayList<>();
+        System.out.println(Class.forName(c).isInstance(list));
         return Class.forName(c).isInstance(obj);
+
     }
 
     // Driver code that calls fun()
-    public static void main(String[] args)
-            throws ClassNotFoundException
-    {
+    public static void main(String[] args) throws ClassNotFoundException {
         Integer i = new Integer(5);
 
         // print true as i is instance of class

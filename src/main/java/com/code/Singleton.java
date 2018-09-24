@@ -10,8 +10,8 @@ package com.code;
 Make constructor as private.
 Write a static method that has return type object of this singleton class.
 Here, the concept of Lazy initialization in used to write this static method.*/
-public class Singleton
-{
+
+public class Singleton {
     // static variable single_instance of type Singleton
     private static Singleton single_instance = null;
 
@@ -19,14 +19,12 @@ public class Singleton
     public String s;
 
     // private constructor restricted to this class itself
-    private Singleton()
-    {
+    private Singleton() {
         s = "Hello I am a string part of Singleton class";
     }
 
     // static method to create instance of Singleton class
-    public static Singleton getInstance()
-    {
+    public static Singleton getInstance() {
         if (single_instance == null)
             single_instance = new Singleton();
 
@@ -34,11 +32,19 @@ public class Singleton
     }
 }
 
+class sing {
+    private static sing s = null;
+
+    private sing getInst() {
+        if (s == null)
+            s = new sing();
+        return s;
+    }
+}
+
 // Driver Class
-class Result
-{
-    public static void main(String args[])
-    {
+class Result {
+    public static void main(String args[]) {
         Singleton s = Singleton.getInstance();
         // instantiating Singleton class with variable x
         Singleton x = Singleton.getInstance();

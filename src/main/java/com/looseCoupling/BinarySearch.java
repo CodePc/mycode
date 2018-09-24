@@ -5,6 +5,7 @@ package com.looseCoupling;
  * @project myJava
  */
 public class BinarySearch {
+
     public static void main(String[] args) {
         BianrySearchImpl bianrySearch = new BianrySearchImpl(new QuickSort());
         bianrySearch.binarySort();

@@ -1,2 +1,3 @@
 - Helps in type safety
 - makes algo more generics and reusable
+- can be applied at class and generic level

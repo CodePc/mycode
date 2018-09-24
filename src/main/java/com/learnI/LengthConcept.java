@@ -1,7 +1,9 @@
 package com.learnI;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by prem on 4/13/2017.
@@ -17,6 +19,8 @@ class test {
         String [] arr = new String[20];
         double [] asss = new double[32];
         int p = asss.length;
+
+
         int i = arr.length;
         Character ch = new Character('a');
         ch.charValue();
@@ -33,6 +37,9 @@ class test {
         List<String> pp = new ArrayList<>();
         pp.add("rea");
         pp.size();
+
+        Map<String,String> map = new HashMap<>();
+        map.size();
 
     }
 }

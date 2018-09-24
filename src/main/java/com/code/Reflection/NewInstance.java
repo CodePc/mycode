@@ -20,8 +20,7 @@ class B {
 class run {
     // This method creates an instance of class whose name is
     // passed as a string 'c'.
-    public static void fun(String c, String d) throws InstantiationException,
-            IllegalAccessException, ClassNotFoundException {
+    public static void fun(String c, String d) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         // Create an object of type 'c'
         Object obj = Class.forName(d).newInstance();
         Object obj2 = Class.forName(c).newInstance();

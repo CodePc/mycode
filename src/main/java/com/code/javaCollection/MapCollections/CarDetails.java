@@ -38,15 +38,26 @@ public class CarDetails implements Comparable<CarDetails> {
         return false;
     }
 
+//    @Override
+//    public int compareTo(CarDetails o) {
+//        if (o != null && o instanceof CarDetails) {
+//            if (this.price < o.price) {
+//                return -1;
+//            }
+//            if (this.price > o.price) {
+//                return 1;
+//            }
+//        }
+//        return 0;
+//    }
+
     @Override
-    public int compareTo(CarDetails o) {
-        if (o != null && o instanceof CarDetails) {
-            if (this.price < o.price) {
+    public int compareTo(CarDetails obj) {
+        if (obj != null && obj instanceof CarDetails) {
+            if (this.price < obj.price)
                 return -1;
-            }
-            if (this.price > o.price) {
+            if (this.price > obj.price)
                 return 1;
-            }
         }
         return 0;
     }

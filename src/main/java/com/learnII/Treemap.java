@@ -1,5 +1,8 @@
 package com.learnII;
 
+import javax.swing.text.html.HTMLDocument;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -9,12 +12,13 @@ import java.util.TreeMap;
 public class Treemap {
 
         public static void main(String[] args) {
-            TreeMap<Integer, String> map = new TreeMap(); //eliminates duplicate and sorts
+            Map<Integer, String> map = new TreeMap(); //eliminates duplicate and sorts
             map.put(1, "prem");
             map.put(3, "golu");
             map.put(2, "Gudiya");
             map.put(4, "soni");
             map.put(1,"kishan");
+
             for (Integer key : map.keySet()) {
                 System.out.println("Key set =" + key);
             }

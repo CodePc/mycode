@@ -7,21 +7,21 @@ import java.util.List;
 /**
  * @author prem chand shah on 06-03-2018
  * @project myJava
+ * Graph Can be implemented using adjacency matrix or adjacency list
+ * in list we visit node and add all the edge node to the parent node , so we have to crete a n node
+ *
  */
 public class BFS {
 
     private int V;   // No. of vertices
     private LinkedList<Integer> adj[]; //Adjacency Lists
 
-//    public String prem[] = new String[4]; ===  adj = new LinkedList[v];
-
-
     // Constructor
     BFS(int v) {
         this.V = v;
-        adj = new LinkedList[v];
+        adj = new LinkedList[v]; // no of list that we need to create that is no of V
         for (int i = 0; i < v; ++i)
-            adj[i] = new LinkedList();
+            adj[i] = new LinkedList(); // creating V number of new list
     }
 
     // Function to add an edge into the graph

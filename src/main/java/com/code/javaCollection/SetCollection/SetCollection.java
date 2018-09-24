@@ -47,7 +47,7 @@ public class SetCollection {
         }
     }
 
-    public void LinkedHashSet() { // ordered sert
+    public void LinkedHashSet() { // ordered sorted
         Set<CarClass> carClassSet = new LinkedHashSet<>();
         for (int i = 0; i <= 100; i++) {
             carClassSet.add(new CarClass("LinkedHashSetCar" + i));

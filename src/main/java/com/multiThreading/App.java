@@ -27,7 +27,7 @@ class Processor extends Thread {
     /**
      * here volatile keyword will ensure that the shared variable is not cached by running thread where it is not modified
      * in thread method but modified from other method
-     *
+     * <p>
      * If changing a variable from other thread use volatile to ensure that shared variable is not cached
      */
     private volatile boolean running = true;
@@ -63,16 +63,16 @@ public class App {
 
         /**for shared resource or variable*/
 
-        Processor proc1 = new Processor();
-        proc1.start();
+//        Processor proc1 = new Processor();
+//        proc1.start();
+//
+//        System.out.println("Press return to stop process");
+//        Scanner scanner = new Scanner(System.in);
+//        scanner.nextLine();
+//        proc1.shutdown();
 
-        System.out.println("Press return to stop process");
-        Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
-        proc1.shutdown();
-
-
-
+        Worker worker = new Worker();
+        worker.main();
     }
 
 }

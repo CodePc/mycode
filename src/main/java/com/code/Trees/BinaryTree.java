@@ -54,6 +54,7 @@ public class BinaryTree {
         printPreorder(node.right);
     }
 
+
     void printPostorder() {
         printPostorder(root);
     }
@@ -81,5 +82,8 @@ public class BinaryTree {
 
         System.out.println("\nPostorder traversal of binary tree is ");
         binaryTree.printPostorder();
+
     }
+
+
 }
